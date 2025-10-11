@@ -9,7 +9,7 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text("MediCall",
         style: TextStyle(color: Color.fromARGB(255, 64, 10, 151)),
-        
+         
         ),
         centerTitle: true,
         leading: Icon(Icons.menu),
@@ -24,6 +24,26 @@ class HomePage extends StatelessWidget {
         ],
 
     ),
+    body: Column(children: [
+      Padding(
+        padding: EdgeInsets.all(18.0),
+        child: TextField(
+          decoration: InputDecoration(
+            border: OutlineInputBorder(
+              borderSide: BorderSide(color: Colors.grey)
+            // borderRadius: BorderRadius.all(Radius.circular(10))
+            ),
+          prefix: Icon(Icons.search),
+          hintText: "Search for hospital or address",
+        
+            
+          ),
+          
+
+        
+        ),
+      )
+    ],),
     );
   }
 }
