@@ -6,6 +6,7 @@ import 'package:medicall_app/pages/contact_page.dart';
 import 'package:medicall_app/pages/login_page.dart';
 import 'package:medicall_app/pages/notification_page.dart';
 import 'package:medicall_app/pages/onboarding_page.dart';
+import 'package:medicall_app/pages/profile_page.dart';
 import 'package:medicall_app/pages/signup_page.dart';
 
 
@@ -30,13 +31,16 @@ class MyApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
      routes: {
-       "/": (context)=> OnboardingPage(),
+      //  "/": (context)=> OnboardingPage(),
+         "/": (context)=> ProfilePage(),
+
         "/home": (context)=> BottomNavigation(),
+        
         "/login": (context)=> LoginPage(),
         "/signup": (context)=> SignupPage(),
       },
       // home: BottomNavigation()
-      initialRoute: "/login_page",
+      initialRoute: "/profile_page",
     );
   }
 }
